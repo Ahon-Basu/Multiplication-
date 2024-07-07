@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "ahon";
+  src: url("kalpurush.ttf");
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ahon", Sans-Serif;
+}
+body {
+  background: linear-gradient(135deg, #37aa, #37aa);
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+#todo {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #e0e3eb;
+  margin-top: 50px;
+
+}
+#head {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#adding_task {
+  padding: 0;
+  margin: 0;
+}
+#adding {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 10px;
+}
+#adding input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+#bt {
+  display: flex;
+}
+#clearall2 {
+  display: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  margin-right: 10px;
+  position: relative;
+  right: 0;
+  color: black;
+}
+#btn {
+  position: relative;
+  background-color: #37a;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+#t {
+  display: none;
+}
+#task_box {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin-left: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 25px;
+}
+#bd {
+  margin-right: 10px;
+}
+ul li.text {
+  text-decoration: line-through;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+}
+ul li::before {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  top: 5px;
+  left: -25px;
+}
+ul li.text::before {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(checkbox-checked-7-512.png);
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  left: -25px;
+  top: 5px;
+}
+ul li span {
+  width: 20px;
+  height: 20px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+ul li span:hover {
+  color: red;
+}
+#clearall {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  right: 0;
+  color: black;
+}
+#clearall1 {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  margin-right: 10px;
+  position: relative;
+  right: 0;
+  color: black;
+}
+#heading strong {
+  font-size: 25px;
+}
+#head1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
